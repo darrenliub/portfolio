@@ -5,35 +5,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10</title>
+    <title>Home</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    * {
+        margin: 0%;
+        font-family: 'Pacifico', cursive;
+    }
+
+    body {
+        background-image: url(https://img.freepik.com/premium-photo/white-pink-marble-texture-background_38607-809.jpg?w=2000);
+    }
+
+    #main>a>h1:hover {
+        font-size: 80px;
+    }
+
+    #right>a>h1:hover {
+        font-size: 80px;
+        transition: 1s;
+    }
+
     #menu {
         display: block;
-        border: 1px #AF69EF;
-        background-color: #AF69EF;
         padding-top: 20px;
         padding-bottom: 20px;
         width: 100%;
+        height: 5%;
         top: 0%;
         left: 0%;
         right: 0%;
         text-align: center;
+        font-size: 30px;
     }
 
-    #menu a {
+    #menu h1 {
+        margin: 0%;
+        color: #de73ff;
+    }
+
+    #main {
+        background-color: #D8B2E1;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #left {
+        border: 3px solid #FFC0CB;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        background-image: linear-gradient(rgba(0 0 0/0.3), rgba(0 0 0/0.3)), url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.15752-9/317612852_5492842777495150_3947426982826210804_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=50zu31ROMP0AX-hTcoW&_nc_ht=scontent.ftpe7-3.fna&oh=03_AdRkNNWO4RJd-mU8xiGbWunT62y6pwSk4l1DBRnao_Tf-Q&oe=63D9BC9F);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         text-decoration: none;
-        font-size: 30px;
+        box-sizing: border-box;
+
+    }
+
+    #left h1 {
+        height: 100%;
+        width: 100%;
+        font-size: 50px;
         color: white;
-        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+    }
+
+    #right {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #project {
+        border: 3px solid #FFC0CB;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgba(0 0 0/0.3), rgba(0 0 0/0.3)), url(https://img.freepik.com/premium-vector/web-development-application-design-illustration-pink-background_145666-1338.jpg?w=2000);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    #project h1 {
+        font-size: 40px;
+        color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+    }
+
+    #about {
+        border: 3px solid #FFC0CB;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgba(0 0 0/0.3), rgba(0 0 0/0.3)), url(https://scontent.ftpe7-4.fna.fbcdn.net/v/t1.15752-9/317548889_551900136282168_8022646900444573253_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=CoAbW7ZrrKcAX8z9u0r&_nc_ht=scontent.ftpe7-4.fna&oh=03_AdS2cNDmdPOqoU_GRdIGraIO25VM3ubnQpLSkX91AtdYMg&oe=63B4C4EA);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    #about h1 {
+        font-size: 40px;
+        color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+    }
+
+    #registration {
+        background-color: #ffc0cb;
+        text-align: center;
+        font-size: 20px;
+        color: black;
     }
 </style>
 
 <body>
     <div id="menu">
-        <a href="file:///C:/Users/darren/OneDrive/%E6%96%87%E4%BB%B6/webdev/portfolio/index.html">Home</a>
-        <a href="file:///C:/Users/darren/OneDrive/%E6%96%87%E4%BB%B6/webdev/portfolio/prtfolio-about.html">About</a>
+        <h1>Darren</h1>
     </div>
+
+    <div id="main">
+        <a href="prtfolio-games.html" id="left">
+            <h1>Games</h1>
+        </a>
+        <div id="right">
+            <a href="prtfolio-project.html" id="project">
+                <h1>Projects</h1>
+            </a>
+            <a href="prtfolio-about.html" id="about">
+                <h1>About</h1>
+            </a>
+        </div>
+    </div>
+    <div id="registration">Darren Liu®</div>
+
 </body>
 
 </html>
